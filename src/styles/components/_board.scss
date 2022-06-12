@@ -1,0 +1,35 @@
+.gameboard {
+  @apply grid grid-cols-5 gap-0.5;
+}
+
+.gameboard__square {
+  @apply w-full min-w-57 max-w-57 mx-px my-px leading-8 text-2xl align-middle inline-flex items-center justify-center w-full rounded-sm uppercase box-border font-bold text-black border-2 border-solid border-light dark:text-white dark:border-gray-5;
+  &:before {
+    content: '';
+    @apply pb-100;
+  }
+}
+
+.gameboard__square.pop {
+  @apply animate-pop;
+}
+
+.gameboard__square.grow {
+  @apply scale-y-0 animate-grow;
+}
+
+.gameboard__square.used {
+  @apply border-gray-400 bg-white dark:bg-dark-8 dark:border-gray-8;
+}
+
+.gameboard__square.not-exist {
+  @apply text-white bg-incorrect border-incorrect dark:bg-incorrect dark:border-incorrect;
+}
+
+.gameboard__square.exist {
+  @apply text-white bg-contain border-contain dark:bg-contain dark:border-contain;
+}
+
+.gameboard__square.exact {
+  @apply text-white bg-correct border-correct dark:bg-correct dark:border-correct;
+}

@@ -1,0 +1,58 @@
+<header class="header">
+  <nav class="header__navbar header__navbar--left">
+    <ul class="header__list">
+      <li class="header__item">
+        <button type="button" data-tooltip-target="tooltip-help" data-modal-toggle="help-modal" class="header__button">
+          <i class="fa-solid fa-circle-question"></i>
+        </button>
+
+        <div id="tooltip-help" role="tooltip" class="header__tooltip invisible opacity-0">
+          Instrucciones del juego
+          <div class="tooltip-arrow" data-popper-arrow></div>
+        </div>
+      </li>
+
+      <li class="header__item">
+        <button type="button" data-tooltip-target="tooltip-info" data-modal-toggle="info-modal" class="header__button">
+          <i class="fas fa-info-circle"></i>
+        </button>
+
+        <div id="tooltip-info" role="tooltip" class="header__tooltip invisible opacity-0">
+          Acerca de la aplicación
+          <div class="tooltip-arrow" data-popper-arrow></div>
+        </div>
+      </li>
+    </ul>
+  </nav>
+  <h1 class="header__title">Wordle App</h1>
+  <nav class="header__navbar header__navbar--right">
+    <ul class="header__list">
+      <li class="header__item">
+        <button id="theme-toggle" type="button" data-tooltip-target="tooltip-theme" class="header__button">
+          <i id="theme-toggle-light-icon" class="hidden fa-solid fa-sun"></i>
+          <i id="theme-toggle-dark-icon" class="fa-solid fa-moon"></i>
+        </button>
+
+        <div id="tooltip-theme" role="tooltip" class="header__tooltip invisible opacity-0">
+          Tema seleccionado
+          <div class="tooltip-arrow" data-popper-arrow></div>
+        </div>
+      </li>
+      <li class="header__item">
+        <button
+          id="btn-restart"
+          type="button"
+          data-tooltip-target="tooltip-restart"
+          class="header__button"
+          onclick="location.reload()"
+        >
+          <i class="fas fa-sync-alt"></i>
+        </button>
+        <div id="tooltip-restart" role="tooltip" class="header__tooltip invisible opacity-0">
+          Reiniciar
+          <div class="tooltip-arrow" data-popper-arrow></div>
+        </div>
+      </li>
+    </ul>
+  </nav>
+</header>

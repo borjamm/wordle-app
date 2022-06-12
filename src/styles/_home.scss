@@ -1,0 +1,16 @@
+html {
+  height: -webkit-fill-available;
+}
+
+body {
+  @apply font-asap flex relative flex-col h-screen bg-white dark:bg-primary;
+  height: -webkit-fill-available;
+}
+
+main {
+  @apply flex justify-center items-center h-full w-12/13 my-0 mx-auto max-w-screen-sm;
+}
+
+.link {
+  @apply text-blue-700 underline decoration-2 underline-offset-2 dark:text-blue-400;
+}

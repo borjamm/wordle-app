@@ -1,0 +1,27 @@
+.keyboard {
+  @apply w-full flex flex-wrap select-none my-0 mx-auto max-w-350;
+}
+
+.keyboard__button {
+  @apply font-inherit h-14 w-full border-0 grow mx-0.5 my-0.75 basis-11.5 transition-colors duration-500 ease-in-out	rounded flex items-center justify-center cursor-pointer uppercase bg-light text-dark dark:text-white dark:bg-gray-8;
+
+  &:active {
+    @apply opacity-80;
+  }
+}
+
+.keyboard__button--special {
+  @apply grow-10;
+}
+
+.keyboard__button.not-exist {
+  @apply bg-incorrect text-white dark:bg-incorrect;
+}
+
+.keyboard__button.exist {
+  @apply bg-contain text-white dark:bg-contain;
+}
+
+.keyboard__button.exact {
+  @apply bg-correct text-white dark:bg-correct;
+}

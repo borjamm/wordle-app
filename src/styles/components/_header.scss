@@ -1,0 +1,31 @@
+.header {
+  @apply flex items-center justify-between text-center mb-0 py-2 px-2  relative border-b border-solid border-gray-200 dark:border-gray-700;
+}
+
+.header__title {
+  @apply leading-inherit text-xl font-bold sm:text-2xl dark:text-white;
+}
+
+.header__list {
+  @apply flex items-center h-full;
+}
+
+.header__item {
+  @apply mx-0;
+}
+
+.header__tooltip {
+  @apply inline-block absolute z-10 py-2 px-3 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm transition-opacity duration-300 tooltip dark:bg-gray-700;
+}
+
+.header__button {
+  @apply text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none rounded-lg text-base px-3 py-2;
+}
+
+.header__button--again {
+  @apply bg-gray-100 dark:bg-gray-700;
+}
+
+.header__button.again {
+  @apply animate-pulse;
+}

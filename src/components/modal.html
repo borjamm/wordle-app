@@ -1,0 +1,93 @@
+<div id="help-modal" aria-hidden="true" tabindex="-1" class="modal hidden">
+  <div class="modal__container">
+    <div class="modal__subcontainer">
+      <header class="modal__header">
+        <h3 class="modal__title">Instrucciones del juego</h3>
+        <button type="button" class="modal__close" data-modal-toggle="help-modal">
+          <i class="text-lg fa-solid fa-xmark"></i>
+        </button>
+      </header>
+
+      <div class="modal__body">
+        <p class="modal__text">
+          Adivina la <strong>palabra española</strong> oculta de 5 letras en seis intentos. Después de cada intento, el
+          color de las letras cambiará para mostrar qué tan cerca estás de acertar la palabra. Una vez finalizada la
+          partida, podrás volver a jugar la veces que quieras pulsado el botón "Reiniciar".
+        </p>
+
+        <h4 class="modal__text"><strong>Ejemplos:</strong></h4>
+        <div class="modal__letters">
+          <div class="gameboard__square exact">c</div>
+          <div class="gameboard__square used">i</div>
+          <div class="gameboard__square used">e</div>
+          <div class="gameboard__square used">l</div>
+          <div class="gameboard__square used">o</div>
+        </div>
+        <p class="modal__text">La letra <strong>C</strong> está en la palabra y en la posición correcta.</p>
+        <div class="modal__letters">
+          <div class="gameboard__square used">p</div>
+          <div class="gameboard__square used">l</div>
+          <div class="gameboard__square exist">a</div>
+          <div class="gameboard__square used">t</div>
+          <div class="gameboard__square used">o</div>
+        </div>
+        <p class="modal__text">La letra <strong>A</strong> está en la palabra, pero en la posición incorrecta.</p>
+        <div class="modal__letters">
+          <div class="gameboard__square used">c</div>
+          <div class="gameboard__square used">o</div>
+          <div class="gameboard__square used">l</div>
+          <div class="gameboard__square used">o</div>
+          <div class="gameboard__square not-exist">r</div>
+        </div>
+        <p class="modal__text">La letra <strong>R</strong> no está en la palabra.</p>
+      </div>
+
+      <footer class="modal__footer">
+        <button data-modal-toggle="help-modal" type="button" class="modal__footer-btn">Empezar a jugar!</button>
+      </footer>
+    </div>
+  </div>
+</div>
+
+<div id="info-modal" aria-hidden="true" tabindex="-1" class="modal hidden">
+  <div class="modal__container modal__container--height max-w-md">
+    <div class="modal__subcontainer">
+      <div class="modal__header">
+        <h3 class="modal__title">Acerca de la aplicación</h3>
+        <button type="button" class="modal__close" data-modal-toggle="info-modal">
+          <i class="text-lg fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <div class="modal__body">
+        <p class="modal__text">
+          Pequeña versión del juego Wordle sin límite de partidas diarias. Esta aplicación se ha realizado
+          <strong>sin ánimo de lucro y no hace uso de ningún tipo de cookie</strong> . Las palabras se han sacado de
+          este
+          <a
+            class="link"
+            href="https://github.com/javierarce/palabras/blob/master/listado-general.txt"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="Ver listado de palabras"
+          >
+            listado.
+          </a>
+        </p>
+      </div>
+      <div class="modal__footer modal__footer--center">
+        <p class="modal__text">
+          Desarrollado por
+          <a
+            class="link"
+            href="https://borjamachin.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="Ir al sitio web"
+          >
+            Borja Machín Morera
+          </a>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

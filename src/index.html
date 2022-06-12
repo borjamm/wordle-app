@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wordle App</title>
+    <meta name="robots" content="noindex, noimageindex, follow" />
+    <meta name="author" content="Borja Machín Morera" />
+    <meta name="description" content="Pequeña versión del juego Wordle sin límite de partidas diarias" />
+    <meta property="og:title" content="Wordle App" />
+    <meta property="og:author" content="Borja Machín Morera" />
+    <meta property="og:description" content="Pequeña versión del juego Wordle sin límite de partidas diarias" />
+    <meta property="og:url" content="https://borjamm.github.io/wordle-app/" />
+    <link rel="stylesheet" href="styles/main.scss" />
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <include src="components/header.html"></include>
+
+    <main id="root">
+      <include src="components/spinner.html"></include>
+      <include src="components/toast.html"></include>
+      <include src="components/modal.html"></include>
+    </main>
+
+    <include src="components/keyword.html"></include>
+    <script type="module" src="scripts/wordle-game.js"></script>
+  </body>
+</html>

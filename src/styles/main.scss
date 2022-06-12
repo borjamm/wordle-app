@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+
+@import url('https://fonts.googleapis.com/css2?family=Asap&display=swap');
+@import '../../node_modules/@fortawesome/fontawesome-free/css/all.min.css';
+
+@import 'home';
+
+// Components
+@import 'components/spinner';
+@import 'components/modal';
+@import 'components/toast';
+@import 'components/header';
+@import 'components/board';
+@import 'components/keyboard';
+
+@tailwind utilities;
